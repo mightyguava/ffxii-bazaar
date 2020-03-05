@@ -3,26 +3,45 @@
     <nav class="navbar is-dark">
       <div class="navbar-brand">
         <h3 class="navbar-item">FFXII Bazaar</h3>
-      </div>
-      <div class="navbar-start">
+
         <a
-          class="navbar-item is-tab"
-          v-bind:class="{ 'is-active': isActive('bazaar') }"
-          v-on:click="activate('bazaar')"
-          >Bazaar</a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+          v-bind:class="{ 'is-active': isMenuActive }"
+          v-on:click="toggleMenu"
         >
-        <a
-          class="navbar-item is-tab"
-          v-bind:class="{ 'is-active': isActive('loot') }"
-          v-on:click="activate('loot')"
-          >Loot Sold</a
-        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <button class="button is-light" v-on:click="resetData">
-            Reset All Data
-          </button>
+      <div class="navbar-menu" v-bind:class="{ 'is-active': isMenuActive }">
+        <div class="navbar-start">
+          <a
+            class="navbar-item is-tab"
+            v-bind:class="{ 'is-active': isActive('bazaar') }"
+            v-on:click="activate('bazaar')"
+            >Bazaar</a
+          >
+          <a
+            class="navbar-item is-tab"
+            v-bind:class="{ 'is-active': isActive('loot') }"
+            v-on:click="activate('loot')"
+            >Loot Sold</a
+          >
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <button
+              class="button is-dark has-text-grey reset-button"
+              v-on:click="resetData"
+            >
+              Reset All Data
+            </button>
+          </div>
         </div>
       </div>
     </nav>
@@ -44,11 +63,16 @@ import store from "./services/bazaar"
 })
 export default class App extends Vue {
   activeTab = "bazaar"
+  isMenuActive = false
   activate(tab: string) {
     this.activeTab = tab
   }
   isActive(tab: string): boolean {
     return this.activeTab === tab
+  }
+
+  toggleMenu() {
+    this.isMenuActive = !this.isMenuActive
   }
   resetData() {
     store.reset()
@@ -71,6 +95,12 @@ export default class App extends Vue {
 @import "~bulma/sass/form/tools.sass";
 @import "~bulma/sass/form/input-textarea.sass";
 @import "~bulma/sass/layout/_all.sass";
+
+@include touch {
+  .button.reset-button {
+    background-color: $white !important;
+  }
+}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
