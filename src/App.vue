@@ -20,7 +20,9 @@
       </div>
       <div class="navbar-end">
         <div class="navbar-item">
-          <button class="button is-light">Reset All Data</button>
+          <button class="button is-light" v-on:click="resetData">
+            Reset All Data
+          </button>
         </div>
       </div>
     </nav>
@@ -33,6 +35,7 @@
 import { Component, Vue } from "vue-property-decorator"
 import BazaarList from "./components/BazaarList.vue"
 import LootPool from "./components/LootPool.vue"
+import store from "./services/bazaar"
 @Component({
   components: {
     BazaarList,
@@ -46,6 +49,9 @@ export default class App extends Vue {
   }
   isActive(tab: string): boolean {
     return this.activeTab === tab
+  }
+  resetData() {
+    store.reset()
   }
 }
 </script>
