@@ -1,0 +1,2919 @@
+[
+  {
+    "id": 1,
+    "package": "Alluring Finery",
+    "price": "3180",
+    "loot": [
+      {
+        "name": "Fine Wool",
+        "quantity": 3
+      },
+      {
+        "name": "Tyrant Hide",
+        "quantity": 1
+      },
+      {
+        "name": "Ice Magicite",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Lamia's Tiara",
+        "quantity": 1
+      },
+      {
+        "name": "Enchanter's Habit",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "package": "Antidote Set",
+    "price": "100",
+    "loot": [
+      {
+        "name": "Drab Wool",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Antidote",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "package": "Armor-piercing Shot",
+    "price": "8900",
+    "loot": [
+      {
+        "name": "Ichthon Scale",
+        "quantity": 4
+      },
+      {
+        "name": "Silver Liquid",
+        "quantity": 5
+      },
+      {
+        "name": "Wind Crystal",
+        "quantity": 7
+      }
+    ],
+    "reward": [
+      {
+        "name": "Windslicer Shot",
+        "quantity": 1
+      },
+      {
+        "name": "Spica",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "package": "Arrows Alight",
+    "price": "2800",
+    "loot": [
+      {
+        "name": "Crooked Fang",
+        "quantity": 2
+      },
+      {
+        "name": "Fire Stone",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Fiery Arrows",
+        "quantity": 1
+      },
+      {
+        "name": "Long Bow",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "package": "Arrows of the Moon Goddess",
+    "price": "1280",
+    "loot": [
+      {
+        "name": "Great Serpent's Fang",
+        "quantity": 2
+      },
+      {
+        "name": "Dorsal Fin",
+        "quantity": 2
+      },
+      {
+        "name": "Gemini Gem",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Artemis Arrows",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "package": "Assorted Leathers",
+    "price": "300",
+    "loot": [
+      {
+        "name": "Wolf Pelt",
+        "quantity": 2
+      },
+      {
+        "name": "Tanned Hide",
+        "quantity": 1
+      },
+      {
+        "name": "Dark Stone",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Leather Breastplate",
+        "quantity": 1
+      },
+      {
+        "name": "Leather Headgear",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "package": "Attenuated Greatsword",
+    "price": "9200",
+    "loot": [
+      {
+        "name": "Quality Stone",
+        "quantity": 4
+      },
+      {
+        "name": "Sky Jewel",
+        "quantity": 7
+      },
+      {
+        "name": "Holy Crystal",
+        "quantity": 10
+      }
+    ],
+    "reward": [
+      {
+        "name": "Save the Queen",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "package": "Back Harness",
+    "price": "600",
+    "loot": [
+      {
+        "name": "Throat Wolf Blood",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Battle Harness",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "package": "Befuddling Incendiaries",
+    "price": "3800",
+    "loot": [
+      {
+        "name": "Bomb Shell",
+        "quantity": 4
+      },
+      {
+        "name": "Book of Orgain-Cent",
+        "quantity": 3
+      },
+      {
+        "name": "Fire Crystal",
+        "quantity": 7
+      }
+    ],
+    "reward": [
+      {
+        "name": "Chaos Bombs",
+        "quantity": 1
+      },
+      {
+        "name": "Caldera",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "package": "Black Vestments",
+    "price": "12800",
+    "loot": [
+      {
+        "name": "Blood Wool",
+        "quantity": 9
+      },
+      {
+        "name": "Prime Tanned Hide",
+        "quantity": 7
+      },
+      {
+        "name": "Dark Crystal",
+        "quantity": 8
+      }
+    ],
+    "reward": [
+      {
+        "name": "Black Mask",
+        "quantity": 1
+      },
+      {
+        "name": "Black Robes",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "package": "Blindflight Quarrels",
+    "price": "11220",
+    "loot": [
+      {
+        "name": "Spiral Incisor",
+        "quantity": 3
+      },
+      {
+        "name": "Silver Liquid",
+        "quantity": 3
+      },
+      {
+        "name": "Dark Crystal",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Black Bolts",
+        "quantity": 1
+      },
+      {
+        "name": "Hunting Crossbow",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "package": "Blush of Light",
+    "price": "1200",
+    "loot": [
+      {
+        "name": "Tomato Stalk",
+        "quantity": 2
+      },
+      {
+        "name": "Magick Lamp",
+        "quantity": 1
+      },
+      {
+        "name": "Snowfly",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Firefly",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "package": "Bow & Bodkin",
+    "price": "400",
+    "loot": [
+      {
+        "name": "Bat Fang",
+        "quantity": 1
+      },
+      {
+        "name": "Rat Pelt",
+        "quantity": 2
+      },
+      {
+        "name": "Dark Stone",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Parallel Arrows",
+        "quantity": 1
+      },
+      {
+        "name": "Shortbow",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "package": "Bow of the Moon Goddess",
+    "price": "9300",
+    "loot": [
+      {
+        "name": "Solid Horn",
+        "quantity": 5
+      },
+      {
+        "name": "Moondust",
+        "quantity": 2
+      },
+      {
+        "name": "Sylphi Halcyon",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Artemis Bow",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "package": "Brawler's Fetish",
+    "price": "3000",
+    "loot": [
+      {
+        "name": "Gimble Stalk",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Amber Armlet",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "package": "Brilliant Shield",
+    "price": "7500",
+    "loot": [
+      {
+        "name": "Ancient Turtle Shell",
+        "quantity": 2
+      },
+      {
+        "name": "Ring Wyrm Liver",
+        "quantity": 2
+      },
+      {
+        "name": "Undin Halcyon",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Venetian Shield",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "package": "Burning Blade",
+    "price": "2025",
+    "loot": [
+      {
+        "name": "Lumber",
+        "quantity": 2
+      },
+      {
+        "name": "Malboro Vine",
+        "quantity": 2
+      },
+      {
+        "name": "Fire Stone",
+        "quantity": 6
+      }
+    ],
+    "reward": [
+      {
+        "name": "Flametongue",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "package": "Burning Fangs",
+    "price": "980",
+    "loot": [
+      {
+        "name": "Pointed Horn",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Soleil Fang",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "package": "Burnished Protectives",
+    "price": "4850",
+    "loot": [
+      {
+        "name": "Wyrm Carapace",
+        "quantity": 2
+      },
+      {
+        "name": "Quality Hide",
+        "quantity": 2
+      },
+      {
+        "name": "Earth Magicite",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Burgonet",
+        "quantity": 1
+      },
+      {
+        "name": "Shielded Armor",
+        "quantity": 1
+      },
+      {
+        "name": "Ice Shield",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "package": "Chain-link Belt",
+    "price": "17820",
+    "loot": [
+      {
+        "name": "Battlewyrm Carapace",
+        "quantity": 2
+      },
+      {
+        "name": "Adamantite",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Bubble Belt",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "package": "Chronos Tear Pack\nRepeatable",
+    "price": "333",
+    "loot": [
+      {
+        "name": "Eye of the Hawk",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Chronos Tear",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "package": "Comfy Headgear",
+    "price": "25000",
+    "loot": [
+      {
+        "name": "White Incense",
+        "quantity": 2
+      },
+      {
+        "name": "Einherjarium",
+        "quantity": 2
+      },
+      {
+        "name": "Virgo Gem",
+        "quantity": 7
+      }
+    ],
+    "reward": [
+      {
+        "name": "Cat-ear Hood",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "package": "Crimson Blade",
+    "price": "4444",
+    "loot": [
+      {
+        "name": "Solid Stone",
+        "quantity": 2
+      },
+      {
+        "name": "Vampyr Fang",
+        "quantity": 3
+      },
+      {
+        "name": "Dark Crystal",
+        "quantity": 15
+      }
+    ],
+    "reward": [
+      {
+        "name": "Karkata",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "package": "Cursed Necklace",
+    "price": "28000",
+    "loot": [
+      {
+        "name": "Blood-stained Necklace",
+        "quantity": 3
+      },
+      {
+        "name": "Death's-Head",
+        "quantity": 2
+      },
+      {
+        "name": "Leo Gem",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Nihopalaoa",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "package": "Darksteel Blade",
+    "price": "17800",
+    "loot": [
+      {
+        "name": "Orichalcum",
+        "quantity": 2
+      },
+      {
+        "name": "Chimera Head",
+        "quantity": 2
+      },
+      {
+        "name": "Taurus Gem",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Stoneblade",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "package": "Devastating Incendiaries",
+    "price": "12000",
+    "loot": [
+      {
+        "name": "Bomb Fragment",
+        "quantity": 3
+      },
+      {
+        "name": "Frog Oil",
+        "quantity": 2
+      },
+      {
+        "name": "Aries Gem",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Castellanos",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "package": "Double-bladed Knife",
+    "price": "7500",
+    "loot": [
+      {
+        "name": "Windslicer Pinion",
+        "quantity": 5
+      },
+      {
+        "name": "Malboro Flower",
+        "quantity": 7
+      },
+      {
+        "name": "Wind Crystal",
+        "quantity": 9
+      }
+    ],
+    "reward": [
+      {
+        "name": "Zwill Crossblade",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "package": "Dragon Crest",
+    "price": "65535",
+    "loot": [
+      {
+        "name": "Omega Badge",
+        "quantity": 1
+      },
+      {
+        "name": "Godslayer's Badge",
+        "quantity": 1
+      },
+      {
+        "name": "Lu Shang's Badge",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Wyrmhero Blade",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "package": "Elegant Pole",
+    "price": "7980",
+    "loot": [
+      {
+        "name": "Blood-darkened Bone",
+        "quantity": 8
+      },
+      {
+        "name": "Demon Feather",
+        "quantity": 6
+      },
+      {
+        "name": "Wind Crystal",
+        "quantity": 7
+      }
+    ],
+    "reward": [
+      {
+        "name": "Ivory Pole",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "package": "Emboldening Arms",
+    "price": "7980",
+    "loot": [
+      {
+        "name": "Quality Pelt",
+        "quantity": 6
+      },
+      {
+        "name": "Tanned Giantskin",
+        "quantity": 4
+      },
+      {
+        "name": "Fire Crystal",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Chakra Band",
+        "quantity": 1
+      },
+      {
+        "name": "Power Vest",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "package": "Engraved Spear",
+    "price": "9025",
+    "loot": [
+      {
+        "name": "Ketu Board",
+        "quantity": 2
+      },
+      {
+        "name": "Broken Spear",
+        "quantity": 2
+      },
+      {
+        "name": "Mystletainn",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Gungnir",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "package": "Esoteric Draught",
+    "price": "108000",
+    "loot": [
+      {
+        "name": "Onion",
+        "quantity": 3
+      },
+      {
+        "name": "Rat Tail",
+        "quantity": 3
+      },
+      {
+        "name": "High Arcana",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Megalixir",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "package": "Exquisite Ring",
+    "price": "7800",
+    "loot": [
+      {
+        "name": "Frogspawn",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Opal Ring",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "package": "Eye Drop Set",
+    "price": "100",
+    "loot": [
+      {
+        "name": "Demon Eyeball",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Eye Drops",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "package": "Eye Openers",
+    "price": "1280",
+    "loot": [
+      {
+        "name": "Chocobo Feather",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Phoenix Down",
+        "quantity": 5
+      },
+      {
+        "name": "Prince's Kiss",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "package": "Feathered Boots",
+    "price": "300",
+    "loot": [
+      {
+        "name": "Arctic Wind",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Winged Boots",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "package": "Fire-bird's Whisper",
+    "price": "2222",
+    "loot": [
+      {
+        "name": "Jack-o'-Lantern",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Phoenix Down",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "package": "First-aid Kit",
+    "price": "450",
+    "loot": [
+      {
+        "name": "Large Feather",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Phoenix Down",
+        "quantity": 2
+      },
+      {
+        "name": "Potion",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "package": "Flask of Oily Liquid",
+    "price": "4000",
+    "loot": [
+      {
+        "name": "Unpurified Ether",
+        "quantity": 2
+      },
+      {
+        "name": "Caramel",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Ether",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "package": "Flask of Viscous Liquid",
+    "price": "12000",
+    "loot": [
+      {
+        "name": "Unpurified Ether",
+        "quantity": 2
+      },
+      {
+        "name": "Foul Liquid",
+        "quantity": 2
+      },
+      {
+        "name": "Slime Oil",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Hi-Ether",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "package": "Forbidding Shield",
+    "price": "7800",
+    "loot": [
+      {
+        "name": "Aged Turtle Shell",
+        "quantity": 2
+      },
+      {
+        "name": "Destrier Barding",
+        "quantity": 8
+      },
+      {
+        "name": "Leamonde Halcyon",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Demon Shield",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "package": "Forked Spear",
+    "price": "6450",
+    "loot": [
+      {
+        "name": "Pointed Horn",
+        "quantity": 4
+      },
+      {
+        "name": "Maggoty Flesh",
+        "quantity": 5
+      },
+      {
+        "name": "Wind Magicite",
+        "quantity": 6
+      }
+    ],
+    "reward": [
+      {
+        "name": "Trident",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "package": "Gigas Gear",
+    "price": "17800",
+    "loot": [
+      {
+        "name": "Prime Pelt",
+        "quantity": 8
+      },
+      {
+        "name": "Prime Tanned Hide",
+        "quantity": 7
+      },
+      {
+        "name": "Dark Crystal",
+        "quantity": 7
+      }
+    ],
+    "reward": [
+      {
+        "name": "Gigas Hat",
+        "quantity": 1
+      },
+      {
+        "name": "Gigas Chestplate",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "package": "Gilt Phylactery",
+    "price": "3000",
+    "loot": [
+      {
+        "name": "Tattered Garment",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Golden Amulet",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "package": "Gilt Shield",
+    "price": "250",
+    "loot": [
+      {
+        "name": "Molting",
+        "quantity": 3
+      },
+      {
+        "name": "Fire Stone",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Buckler",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "package": "Golden Battle Axe",
+    "price": "10000",
+    "loot": [
+      {
+        "name": "Electrum",
+        "quantity": 2
+      },
+      {
+        "name": "Broken Greataxe",
+        "quantity": 2
+      },
+      {
+        "name": "Mardu Halcyon",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Golden Axe",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "package": "Golden Garb",
+    "price": "3980",
+    "loot": [
+      {
+        "name": "Iron Carapace",
+        "quantity": 3
+      },
+      {
+        "name": "Tanned Hide",
+        "quantity": 2
+      },
+      {
+        "name": "Dark Magicite",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Golden Helm",
+        "quantity": 1
+      },
+      {
+        "name": "Golden Armor",
+        "quantity": 1
+      },
+      {
+        "name": "Golden Shield",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "package": "Hi-Potion Pack\nRepeatable",
+    "price": "1111",
+    "loot": [
+      {
+        "name": "Rainbow Egg",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Hi-Potion",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "package": "Hollow-shaft Arrows",
+    "price": "3980",
+    "loot": [
+      {
+        "name": "Bat Fang",
+        "quantity": 5
+      },
+      {
+        "name": "Yellow Liquid",
+        "quantity": 1
+      },
+      {
+        "name": "Water Magicite",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Bamboo Arrows",
+        "quantity": 1
+      },
+      {
+        "name": "Loxley Bow",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "package": "Huntsman's Crossbow",
+    "price": "3500",
+    "loot": [
+      {
+        "name": "Bundle of Needles",
+        "quantity": 1
+      },
+      {
+        "name": "Festering Flesh",
+        "quantity": 2
+      },
+      {
+        "name": "Ice Magicite",
+        "quantity": 5
+      }
+    ],
+    "reward": [
+      {
+        "name": "Stone Bolts",
+        "quantity": 1
+      },
+      {
+        "name": "Recurve Crossbow",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "package": "Iron-forged Blade",
+    "price": "650",
+    "loot": [
+      {
+        "name": "Iron Scraps",
+        "quantity": 3
+      },
+      {
+        "name": "Foul Flesh",
+        "quantity": 2
+      },
+      {
+        "name": "Earth Stone",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Iron Sword",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "package": "Iron-forged Pole",
+    "price": "2115",
+    "loot": [
+      {
+        "name": "Sturdy Bone",
+        "quantity": 5
+      },
+      {
+        "name": "Demon Eyeball",
+        "quantity": 3
+      },
+      {
+        "name": "Fire Magicite",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Iron Pole",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "package": "Jag-tooth Ninja Sword",
+    "price": "3800",
+    "loot": [
+      {
+        "name": "Giant Feather",
+        "quantity": 5
+      },
+      {
+        "name": "Festering Flesh",
+        "quantity": 4
+      },
+      {
+        "name": "Dark Magicite",
+        "quantity": 5
+      }
+    ],
+    "reward": [
+      {
+        "name": "Kagenui",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "package": "Jewel of Creation\nRepeatable",
+    "price": "29997",
+    "loot": [
+      {
+        "name": "Soul Powder",
+        "quantity": 1
+      },
+      {
+        "name": "Wargod's Band",
+        "quantity": 2
+      },
+      {
+        "name": "High Arcana",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Empyreal Soul",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "package": "Jewel of the Serpent\nRepeatable",
+    "price": "19998",
+    "loot": [
+      {
+        "name": "Snake Skin",
+        "quantity": 4
+      },
+      {
+        "name": "Serpent Eye",
+        "quantity": 2
+      },
+      {
+        "name": "High Arcana",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Serpentarius",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "package": "Large Gloves",
+    "price": "2000",
+    "loot": [
+      {
+        "name": "Bent Staff",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Blazer Gloves",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "package": "Late-model Rifle",
+    "price": "8000",
+    "loot": [
+      {
+        "name": "Wyvern Wing",
+        "quantity": 2
+      },
+      {
+        "name": "Yensa Fin",
+        "quantity": 2
+      },
+      {
+        "name": "Salamand Halcyon",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Arcturus",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "package": "The Leering Blade",
+    "price": "8800",
+    "loot": [
+      {
+        "name": "Broken Sword",
+        "quantity": 3
+      },
+      {
+        "name": "Demon Tail",
+        "quantity": 7
+      },
+      {
+        "name": "Dark Crystal",
+        "quantity": 10
+      }
+    ],
+    "reward": [
+      {
+        "name": "Deathbringer",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "package": "Light & Sturdy Garb",
+    "price": "5800",
+    "loot": [
+      {
+        "name": "Coeurl Pelt",
+        "quantity": 6
+      },
+      {
+        "name": "Tanned Tyrant Hide",
+        "quantity": 2
+      },
+      {
+        "name": "Storm Magicite",
+        "quantity": 5
+      }
+    ],
+    "reward": [
+      {
+        "name": "Adamant Hat",
+        "quantity": 1
+      },
+      {
+        "name": "Adamant Vest",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "package": "Light Spear",
+    "price": "310",
+    "loot": [
+      {
+        "name": "Horn",
+        "quantity": 2
+      },
+      {
+        "name": "Foul Flesh",
+        "quantity": 2
+      },
+      {
+        "name": "Wind Stone",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Javelin",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "package": "Life Crystal\nRepeatable",
+    "price": "9999",
+    "loot": [
+      {
+        "name": "Arcana",
+        "quantity": 10
+      },
+      {
+        "name": "Feystone",
+        "quantity": 1
+      },
+      {
+        "name": "Soul of Thamasa",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "High Arcana",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "package": "Magepower Helm",
+    "price": "7500",
+    "loot": [
+      {
+        "name": "Charger Barding",
+        "quantity": 5
+      },
+      {
+        "name": "Chimera Head",
+        "quantity": 2
+      },
+      {
+        "name": "Feystone",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Magepower Shishak",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "package": "Magick Shard",
+    "price": "99",
+    "loot": [
+      {
+        "name": "Glass Jewel",
+        "quantity": 8
+      },
+      {
+        "name": "Sky Jewel",
+        "quantity": 8
+      },
+      {
+        "name": "Diakon Halcyon",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Holy Mote",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "package": "Magick Shard",
+    "price": "499",
+    "loot": [
+      {
+        "name": "Book of Orgain",
+        "quantity": 8
+      },
+      {
+        "name": "Book of Orgain-Cent",
+        "quantity": 8
+      },
+      {
+        "name": "Book of Orgain-Mille",
+        "quantity": 8
+      }
+    ],
+    "reward": [
+      {
+        "name": "Scathe Mote",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "package": "Magick Shards",
+    "price": "1480",
+    "loot": [
+      {
+        "name": "Festering Flesh",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Aqua Mote",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "package": "Marksman's Delight",
+    "price": "550",
+    "loot": [
+      {
+        "name": "Fish Scale",
+        "quantity": 2
+      },
+      {
+        "name": "Green Liquid",
+        "quantity": 1
+      },
+      {
+        "name": "Dark Stone",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Silent Shot",
+        "quantity": 1
+      },
+      {
+        "name": "Capella",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "package": "Master-crafted Blade",
+    "price": "350000",
+    "loot": [
+      {
+        "name": "Gemsteel",
+        "quantity": 2
+      },
+      {
+        "name": "Orichalcum",
+        "quantity": 3
+      },
+      {
+        "name": "Mallet",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Kumbha",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "package": "Matching Reds",
+    "price": "2480",
+    "loot": [
+      {
+        "name": "Coeurl Pelt",
+        "quantity": 3
+      },
+      {
+        "name": "Quality Hide",
+        "quantity": 2
+      },
+      {
+        "name": "Dark Magicite",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Red Cap",
+        "quantity": 1
+      },
+      {
+        "name": "Brigandine",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "package": "Matchless Metal\nRepeatable",
+    "price": "29997",
+    "loot": [
+      {
+        "name": "Scarletite",
+        "quantity": 1
+      },
+      {
+        "name": "Damascus Steel",
+        "quantity": 2
+      },
+      {
+        "name": "Hell-Gate's Flame",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Gemsteel",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "package": "Memories of Yore",
+    "price": "999",
+    "loot": [
+      {
+        "name": "Quality Stone",
+        "quantity": 5
+      }
+    ],
+    "reward": [
+      {
+        "name": "Pebble",
+        "quantity": 99
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "package": "Monk's Garb",
+    "price": "3180",
+    "loot": [
+      {
+        "name": "Coeurl Pelt",
+        "quantity": 4
+      },
+      {
+        "name": "Tyrant Hide",
+        "quantity": 2
+      },
+      {
+        "name": "Ice Magicite",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Headband",
+        "quantity": 1
+      },
+      {
+        "name": "Jujitsu Gi",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "package": "Morbid Urn",
+    "price": "250000",
+    "loot": [
+      {
+        "name": "Phobos Glaze",
+        "quantity": 1
+      },
+      {
+        "name": "Horakhty's Flame",
+        "quantity": 1
+      },
+      {
+        "name": "Deimos Clay",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Canopic Jar",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "package": "Mudslinger",
+    "price": "120000",
+    "loot": [
+      {
+        "name": "Emperor Scale",
+        "quantity": 2
+      },
+      {
+        "name": "Silver Liquid",
+        "quantity": 3
+      },
+      {
+        "name": "Earth Crystal",
+        "quantity": 8
+      }
+    ],
+    "reward": [
+      {
+        "name": "Mud Shot",
+        "quantity": 1
+      },
+      {
+        "name": "Mithuna",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "package": "Mysterious Substance\nRepeatable",
+    "price": "14999",
+    "loot": [
+      {
+        "name": "Grimoire Togail",
+        "quantity": 3
+      },
+      {
+        "name": "Grimoire Aidhed",
+        "quantity": 3
+      },
+      {
+        "name": "Bat Wing",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Dark Energy",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "package": "Mystic Staff",
+    "price": "3600",
+    "loot": [
+      {
+        "name": "Quality Lumber",
+        "quantity": 4
+      },
+      {
+        "name": "Demon Feather",
+        "quantity": 6
+      },
+      {
+        "name": "Storm Crystal",
+        "quantity": 7
+      }
+    ],
+    "reward": [
+      {
+        "name": "Cloud Staff",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "package": "Nature's Armory",
+    "price": "13800",
+    "loot": [
+      {
+        "name": "Prime Pelt",
+        "quantity": 9
+      },
+      {
+        "name": "Forbidden Flesh",
+        "quantity": 7
+      },
+      {
+        "name": "Fire Crystal",
+        "quantity": 8
+      }
+    ],
+    "reward": [
+      {
+        "name": "Crown of Laurels",
+        "quantity": 1
+      },
+      {
+        "name": "Rubber Suit",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "package": "Ninja Footgear",
+    "price": "400",
+    "loot": [
+      {
+        "name": "Slaven Harness",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Gillie Boots",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "package": "Ninja Garb",
+    "price": "4800",
+    "loot": [
+      {
+        "name": "Fine Wool",
+        "quantity": 4
+      },
+      {
+        "name": "Tanned Tyrant Hide",
+        "quantity": 2
+      },
+      {
+        "name": "Fire Magicite",
+        "quantity": 5
+      }
+    ],
+    "reward": [
+      {
+        "name": "Black Cowl",
+        "quantity": 1
+      },
+      {
+        "name": "Black Garb",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "package": "Noisome Incendiaries",
+    "price": "3280",
+    "loot": [
+      {
+        "name": "Bomb Shell",
+        "quantity": 1
+      },
+      {
+        "name": "Fire Crystal",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Poison Bombs",
+        "quantity": 1
+      },
+      {
+        "name": "Fumarole",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "package": "Oil-soaked Incendiaries",
+    "price": "10625",
+    "loot": [
+      {
+        "name": "Bomb Ashes",
+        "quantity": 3
+      },
+      {
+        "name": "Book of Orgain",
+        "quantity": 2
+      },
+      {
+        "name": "Fire Crystal",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Oil Bombs",
+        "quantity": 1
+      },
+      {
+        "name": "Tumulus",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "package": "Permafrost Bow & Quiver",
+    "price": "17200",
+    "loot": [
+      {
+        "name": "Spiral Incisor",
+        "quantity": 4
+      },
+      {
+        "name": "Antarctic Wind",
+        "quantity": 2
+      },
+      {
+        "name": "Ice Crystal",
+        "quantity": 7
+      }
+    ],
+    "reward": [
+      {
+        "name": "Icecloud Arrows",
+        "quantity": 1
+      },
+      {
+        "name": "Perseus Bow",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "package": "Phials & Philtres",
+    "price": "1980",
+    "loot": [
+      {
+        "name": "Malboro Flower",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Serum",
+        "quantity": 8
+      },
+      {
+        "name": "Nu Khai Sand",
+        "quantity": 16
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "package": "Phoenix Flight",
+    "price": "8750",
+    "loot": [
+      {
+        "name": "Windslicer Pinion",
+        "quantity": 5
+      }
+    ],
+    "reward": [
+      {
+        "name": "Phoenix Down",
+        "quantity": 50
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "package": "Piercing Bolts",
+    "price": "1680",
+    "loot": [
+      {
+        "name": "Wrath of the Gods",
+        "quantity": 2
+      },
+      {
+        "name": "Ring Wyrm Liver",
+        "quantity": 2
+      },
+      {
+        "name": "Capricorn Gem",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Grand Bolts",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "package": "Platinum Gear",
+    "price": "9800",
+    "loot": [
+      {
+        "name": "Insect Husk",
+        "quantity": 2
+      },
+      {
+        "name": "Tanned Giantskin",
+        "quantity": 5
+      },
+      {
+        "name": "Storm Magicite",
+        "quantity": 6
+      }
+    ],
+    "reward": [
+      {
+        "name": "Platinum Helm",
+        "quantity": 1
+      },
+      {
+        "name": "Platinum Armor",
+        "quantity": 1
+      },
+      {
+        "name": "Platinum Shield",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "package": "Potion Crate",
+    "price": "7480",
+    "loot": [
+      {
+        "name": "Screamroot",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Potion",
+        "quantity": 30
+      },
+      {
+        "name": "Hi-Potion",
+        "quantity": 20
+      },
+      {
+        "name": "X-Potion",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "package": "Potion Pack\nRepeatable",
+    "price": "70",
+    "loot": [
+      {
+        "name": "Cactus Fruit",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Potion",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "package": "Rain of Tears",
+    "price": "800",
+    "loot": [
+      {
+        "name": "Yensa Scale",
+        "quantity": 1
+      },
+      {
+        "name": "Green Liquid",
+        "quantity": 3
+      },
+      {
+        "name": "Water Stone",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Aqua Shot",
+        "quantity": 1
+      },
+      {
+        "name": "Vega",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "package": "Ranger's Crossbow",
+    "price": "1080",
+    "loot": [
+      {
+        "name": "Crooked Fang",
+        "quantity": 4
+      },
+      {
+        "name": "Yellow Liquid",
+        "quantity": 2
+      },
+      {
+        "name": "Ice Stone",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Long Bolts",
+        "quantity": 1
+      },
+      {
+        "name": "Crossbow",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "package": "Saint's Draught",
+    "price": "36000",
+    "loot": [
+      {
+        "name": "Ambrosia",
+        "quantity": 3
+      },
+      {
+        "name": "Demon Drink",
+        "quantity": 3
+      },
+      {
+        "name": "High Arcana",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Elixir",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "package": "Samurai's Katana",
+    "price": "8400",
+    "loot": [
+      {
+        "name": "Iron Ore",
+        "quantity": 5
+      },
+      {
+        "name": "Screamroot",
+        "quantity": 7
+      },
+      {
+        "name": "Water Crystal",
+        "quantity": 9
+      }
+    ],
+    "reward": [
+      {
+        "name": "Ame-no-Murakumo",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "package": "The Scorpion",
+    "price": "70000",
+    "loot": [
+      {
+        "name": "Charged Gizzard",
+        "quantity": 3
+      },
+      {
+        "name": "Wyrm Bone",
+        "quantity": 3
+      },
+      {
+        "name": "Scorpio Gem",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Vrscika",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "package": "Scout's Crossbow",
+    "price": "6400",
+    "loot": [
+      {
+        "name": "Wyvern Fang",
+        "quantity": 4
+      },
+      {
+        "name": "Ancient Bone",
+        "quantity": 3
+      },
+      {
+        "name": "Holy Crystal",
+        "quantity": 9
+      }
+    ],
+    "reward": [
+      {
+        "name": "Time Bolts",
+        "quantity": 1
+      },
+      {
+        "name": "Penetrator Crossbow",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "package": "Serpent Blade",
+    "price": "90000",
+    "loot": [
+      {
+        "name": "Coeurl Whisker",
+        "quantity": 2
+      },
+      {
+        "name": "Sickle-Blade",
+        "quantity": 2
+      },
+      {
+        "name": "Cancer Gem",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Mesa",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "package": "Serum Pack",
+    "price": "999",
+    "loot": [
+      {
+        "name": "Demon's Sigh",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Serum",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "package": "Shell-worked Collar",
+    "price": "6000",
+    "loot": [
+      {
+        "name": "Bomb Shell",
+        "quantity": 2
+      },
+      {
+        "name": "Four-Leaf Clover",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Turtleshell Choker",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "package": "Shoes of the Dead",
+    "price": "450",
+    "loot": [
+      {
+        "name": "Zombie Powder",
+        "quantity": 1
+      },
+      {
+        "name": "Destrier Mane",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Quasimodo Boots",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "package": "Silver Bow",
+    "price": "100000",
+    "loot": [
+      {
+        "name": "Beastlord Horn",
+        "quantity": 3
+      },
+      {
+        "name": "Moon Ring",
+        "quantity": 3
+      },
+      {
+        "name": "Sagittarius Gem",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Dhanusha",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "package": "Sipping Wine",
+    "price": "240",
+    "loot": [
+      {
+        "name": "Tyrant Hide",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Bacchus's Wine",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "package": "Smelling Salts, & C.",
+    "price": "540",
+    "loot": [
+      {
+        "name": "Malboro Vine",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Hi-Potion",
+        "quantity": 4
+      },
+      {
+        "name": "Nu Khai Sand",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "package": "Soul of the Fire-bird",
+    "price": "5980",
+    "loot": [
+      {
+        "name": "Bundle of Feathers",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Phoenix Down",
+        "quantity": 25
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "package": "Stone Shot",
+    "price": "1480",
+    "loot": [
+      {
+        "name": "Mirror Scale",
+        "quantity": 2
+      },
+      {
+        "name": "Tyrant Bone",
+        "quantity": 2
+      },
+      {
+        "name": "Libra Gem",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Stone Shot",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "package": "Sturdy Battle Gear",
+    "price": "8000",
+    "loot": [
+      {
+        "name": "Charger Barding",
+        "quantity": 4
+      },
+      {
+        "name": "Split Armor",
+        "quantity": 2
+      },
+      {
+        "name": "Pisces Gem",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Maximillian",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "package": "The Sunflower",
+    "price": "600000",
+    "loot": [
+      {
+        "name": "Gemsteel",
+        "quantity": 3
+      },
+      {
+        "name": "Empyreal Soul",
+        "quantity": 3
+      },
+      {
+        "name": "Serpentarius",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Tournesol",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "package": "Survival Set",
+    "price": "1500",
+    "loot": [
+      {
+        "name": "Malboro Fruit",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Antidote",
+        "quantity": 12
+      },
+      {
+        "name": "Eye Drops",
+        "quantity": 12
+      },
+      {
+        "name": "Echo Herbs",
+        "quantity": 12
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "package": "Tail of the Phoenix",
+    "price": "400",
+    "loot": [
+      {
+        "name": "Small Feather",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Phoenix Down",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "package": "Tinctures & Tonics",
+    "price": "700",
+    "loot": [
+      {
+        "name": "Succulent Fruit",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Potion",
+        "quantity": 5
+      },
+      {
+        "name": "Handkerchief",
+        "quantity": 3
+      },
+      {
+        "name": "Gold Needle",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "package": "Triage Kit",
+    "price": "2980",
+    "loot": [
+      {
+        "name": "Giant Feather",
+        "quantity": 3
+      }
+    ],
+    "reward": [
+      {
+        "name": "Phoenix Down",
+        "quantity": 12
+      },
+      {
+        "name": "Hi-Potion",
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "package": "Traveler's Garb",
+    "price": "1890",
+    "loot": [
+      {
+        "name": "Braid Wool",
+        "quantity": 2
+      },
+      {
+        "name": "Tanned Hide",
+        "quantity": 2
+      },
+      {
+        "name": "Water Stone",
+        "quantity": 5
+      }
+    ],
+    "reward": [
+      {
+        "name": "Feathered Cap",
+        "quantity": 1
+      },
+      {
+        "name": "Traveler's Vestment",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "package": "Ultimate Blade",
+    "price": "12800",
+    "loot": [
+      {
+        "name": "Adamantite",
+        "quantity": 2
+      },
+      {
+        "name": "Death Powder",
+        "quantity": 2
+      },
+      {
+        "name": "Gnoma Halcyon",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Ultima Blade",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "package": "Unassuming Surcoat",
+    "price": "100",
+    "loot": [
+      {
+        "name": "Wolf Pelt",
+        "quantity": 2
+      },
+      {
+        "name": "Earth Stone",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Chromed Leathers",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "package": "War Axe",
+    "price": "4680",
+    "loot": [
+      {
+        "name": "Pointed Horn",
+        "quantity": 2
+      },
+      {
+        "name": "Malboro Fruit",
+        "quantity": 4
+      },
+      {
+        "name": "Wind Magicite",
+        "quantity": 6
+      }
+    ],
+    "reward": [
+      {
+        "name": "Francisca",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "package": "Warped Blade",
+    "price": "5650",
+    "loot": [
+      {
+        "name": "Bundle of Feathers",
+        "quantity": 6
+      },
+      {
+        "name": "Maggoty Flesh",
+        "quantity": 4
+      },
+      {
+        "name": "Fire Magicite",
+        "quantity": 6
+      }
+    ],
+    "reward": [
+      {
+        "name": "Diamond Sword",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "package": "Water-drop Munitions",
+    "price": "2640",
+    "loot": [
+      {
+        "name": "Book of Orgain",
+        "quantity": 3
+      },
+      {
+        "name": "Putrid Liquid",
+        "quantity": 3
+      },
+      {
+        "name": "Water Crystal",
+        "quantity": 10
+      }
+    ],
+    "reward": [
+      {
+        "name": "Water Bombs",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "package": "Well-forged Blade",
+    "price": "80000",
+    "loot": [
+      {
+        "name": "Lifewick",
+        "quantity": 3
+      },
+      {
+        "name": "Ring Wyrm Scale",
+        "quantity": 4
+      },
+      {
+        "name": "Leshach Halcyon",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "Simha",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "package": "Whisker of the Beast",
+    "price": "60000",
+    "loot": [
+      {
+        "name": "Mythril",
+        "quantity": 3
+      },
+      {
+        "name": "Corpse Fly",
+        "quantity": 3
+      },
+      {
+        "name": "Aquarius Gem",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Kanya",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "package": "White Vestments",
+    "price": "12800",
+    "loot": [
+      {
+        "name": "Blood Wool",
+        "quantity": 9
+      },
+      {
+        "name": "Beastlord Hide",
+        "quantity": 7
+      },
+      {
+        "name": "Holy Crystal",
+        "quantity": 8
+      }
+    ],
+    "reward": [
+      {
+        "name": "White Mask",
+        "quantity": 1
+      },
+      {
+        "name": "White Robes",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "package": "Wind Walkers",
+    "price": "18000",
+    "loot": [
+      {
+        "name": "Gysahl Greens",
+        "quantity": 33
+      },
+      {
+        "name": "Arcana",
+        "quantity": 15
+      }
+    ],
+    "reward": [
+      {
+        "name": "Hermes Sandals",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "package": "Wing Cord",
+    "price": "2000",
+    "loot": [
+      {
+        "name": "Stardust",
+        "quantity": 2
+      }
+    ],
+    "reward": [
+      {
+        "name": "Pheasant Netsuke",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "package": "Wooden Pole",
+    "price": "480",
+    "loot": [
+      {
+        "name": "Bone Fragment",
+        "quantity": 5
+      },
+      {
+        "name": "Succulent Fruit",
+        "quantity": 3
+      },
+      {
+        "name": "Earth Stone",
+        "quantity": 4
+      }
+    ],
+    "reward": [
+      {
+        "name": "Cypress Pole",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "package": "X-Potion Pack",
+    "price": "4444",
+    "loot": [
+      {
+        "name": "Behemoth Steak",
+        "quantity": 1
+      }
+    ],
+    "reward": [
+      {
+        "name": "X-Potion",
+        "quantity": 10
+      }
+    ]
+  }
+]
