@@ -66,10 +66,10 @@
         <table class="table is-fullwidth">
           <tr>
             <th>Package</th>
-            <th>Gil</th>
             <th>Loot Sold</th>
-            <th>Rewards</th>
             <th>Actions</th>
+            <th>Rewards</th>
+            <th>Gil</th>
           </tr>
           <tr v-for="p in filtered" v-bind:key="p.id">
             <td>
@@ -84,7 +84,6 @@
                 <span v-if="isPurchased(p)" class="tag is-info">Purchased</span>
               </div>
             </td>
-            <td class="has-text-right">{{ p.price }}</td>
             <td>
               <div v-for="loot in p.loot" v-bind:key="loot.name">
                 {{ loot.name }} {{ sold[loot.name] || 0 }}/{{ loot.quantity }}
@@ -97,11 +96,6 @@
                 <span class="icon is-size-5 sell-icon" v-on:click="sell(loot)">
                   <i class="mdi mdi-plus-box-outline" aria-hidden="true"></i>
                 </span>
-              </div>
-            </td>
-            <td>
-              <div v-for="reward in p.reward" v-bind:key="reward.name">
-                {{ reward.name }} x{{ reward.quantity }}
               </div>
             </td>
             <td>
@@ -132,6 +126,12 @@
                 </button>
               </div>
             </td>
+            <td>
+              <div v-for="reward in p.reward" v-bind:key="reward.name">
+                {{ reward.name }} x{{ reward.quantity }}
+              </div>
+            </td>
+            <td class="has-text-right">{{ p.price }}</td>
           </tr>
         </table>
       </div>

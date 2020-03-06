@@ -106,7 +106,7 @@ export default class LootPool extends Vue {
         rows.push({ name, quantity, packages: this.lootToPackage[name] })
       }
     }
-    this.filtered = rows
+    this.filtered = rows.sort((a, b) => (a.name < b.name ? -1 : 1))
   }
 }
 </script>
