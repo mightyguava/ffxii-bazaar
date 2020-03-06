@@ -3,6 +3,18 @@
     <nav class="navbar is-dark">
       <div class="navbar-brand">
         <h3 class="navbar-item">FFXII Bazaar</h3>
+        <a
+          class="navbar-item is-tab"
+          v-bind:class="{ 'is-active': isActive('bazaar') }"
+          v-on:click="activate('bazaar')"
+          >Bazaar</a
+        >
+        <a
+          class="navbar-item is-tab"
+          v-bind:class="{ 'is-active': isActive('loot') }"
+          v-on:click="activate('loot')"
+          >Loot Sold</a
+        >
 
         <a
           role="button"
@@ -19,20 +31,7 @@
         </a>
       </div>
       <div class="navbar-menu" v-bind:class="{ 'is-active': isMenuActive }">
-        <div class="navbar-start">
-          <a
-            class="navbar-item is-tab"
-            v-bind:class="{ 'is-active': isActive('bazaar') }"
-            v-on:click="activate('bazaar')"
-            >Bazaar</a
-          >
-          <a
-            class="navbar-item is-tab"
-            v-bind:class="{ 'is-active': isActive('loot') }"
-            v-on:click="activate('loot')"
-            >Loot Sold</a
-          >
-        </div>
+        <div class="navbar-start"></div>
         <div class="navbar-end">
           <div class="navbar-item">
             <button

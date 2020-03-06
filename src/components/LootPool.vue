@@ -2,12 +2,12 @@
   <div>
     <nav class="has-background-light">
       <div class="container">
-        <div class="level filters is-mobile">
+        <div class="level filters">
           <div class="level-left">
             <div class="level-item">
-              <label class="label">Search</label>
-            </div>
-            <div class="level-item">
+              <div class="field-label">
+                <label class="label">Search</label>
+              </div>
               <div class="field is-horizontal">
                 <div class="field">
                   <div class="control">
@@ -26,7 +26,7 @@
         </div>
       </div>
     </nav>
-    <section>
+    <section class="scrollable">
       <div class="container">
         <table class="table">
           <tr>
@@ -96,4 +96,8 @@ export default class LootPool extends Vue {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+$filters-height: 3rem;
+$filters-height-mobile: 3.5rem;
+@import "./views-shared.scss";
+</style>

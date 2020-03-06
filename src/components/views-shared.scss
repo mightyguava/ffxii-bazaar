@@ -1,0 +1,39 @@
+@import "~bulma/sass/utilities/all";
+$navbar-height: 3.25rem;
+$filters-height: 3rem !default;
+$filters-height-mobile: $filters-height !default;
+$header-height: $navbar-height + $filters-height;
+$header-height-mobile: $navbar-height + $filters-height-mobile;
+
+.filters.level {
+  width: 100%;
+  height: $filters-height;
+  margin-bottom: 0;
+
+  @include mobile {
+    position: relative;
+    padding-left: 0;
+    padding-top: 0.5rem;
+    margin-top: 0;
+    height: $filters-height-mobile;
+
+    .level-item {
+      justify-content: left;
+    }
+  }
+
+  .field-label {
+    flex-grow: 0;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0 !important;
+  }
+}
+
+.scrollable {
+  height: calc(100vh - #{$header-height});
+  @include mobile {
+    height: calc(100vh - #{$header-height-mobile});
+  }
+  overflow-y: scroll;
+}

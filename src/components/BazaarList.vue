@@ -2,12 +2,12 @@
   <div>
     <nav class="has-background-light">
       <div class="container">
-        <div class="level filters is-mobile">
+        <div class="level filters">
           <div class="level-left">
             <div class="level-item">
-              <label class="label">Search</label>
-            </div>
-            <div class="level-item">
+              <div class="field-label">
+                <label class="label">Search</label>
+              </div>
               <div class="field is-horizontal">
                 <div class="field">
                   <div class="control">
@@ -26,8 +26,6 @@
               <div class="field-label">
                 <label class="label">Filter</label>
               </div>
-            </div>
-            <div class="level-item">
               <div class="buttons are-small">
                 <button
                   class="button"
@@ -56,7 +54,7 @@
         </div>
       </div>
     </nav>
-    <section class="bazaar">
+    <section class="scrollable">
       <div class="container">
         <table class="table is-fullwidth">
           <tr>
@@ -132,31 +130,9 @@
 </template>
 
 <style lang="scss" scoped>
-@import "~bulma/sass/utilities/all";
 $filters-height: 3rem;
-
-.filters.level {
-  width: 100%;
-  height: $filters-height;
-  margin-bottom: 0;
-
-  @include touch {
-    position: relative;
-    padding-left: 0;
-    margin-top: 0;
-  }
-
-  .field-label {
-    flex-grow: 0;
-    margin-left: 1rem;
-    margin-right: 0.5rem;
-  }
-}
-
-.bazaar {
-  height: calc(100vh - #{$filters-height});
-  overflow-y: scroll;
-}
+$filters-height-mobile: 2 * $filters-height;
+@import "./views-shared.scss";
 
 .sell-icon {
   user-select: none;
