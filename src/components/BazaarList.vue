@@ -187,7 +187,7 @@ export default class BazaarList extends Vue {
   }
 
   filter() {
-    const q = this.query
+    const q = this.query.toLowerCase()
     this.filtered = this.packages.filter(p => {
       return (
         (p.package.toLowerCase().includes(q) ||
