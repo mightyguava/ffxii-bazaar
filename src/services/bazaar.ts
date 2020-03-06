@@ -45,7 +45,7 @@ function initSold(): Record<string, number> {
   return inventory
 }
 
-function initPurchased(): Record<string, boolean> {
+function packageMap(): Record<string, boolean> {
   const purchased: Record<string, boolean> = {}
   const packages = getPackages()
   for (const p of packages) {
@@ -59,23 +59,30 @@ class Store {
   /* mapping of loot names to the quantities required in each package that needs it */
   lootToPackage: Record<string, Item[]>
   sold: Record<string, number>
+  unlocked: Record<string, boolean>
   purchased: Record<string, boolean>
 
   constructor(
     packages: Package[],
     lootToPackage: Record<string, Item[]>,
     sold: Record<string, number>,
+    unlocked: Record<string, boolean>,
     purchased: Record<string, boolean>
   ) {
     this.packages = packages
     this.lootToPackage = lootToPackage
     this.sold = sold
+    this.unlocked = unlocked
     this.purchased = purchased
     this.load()
   }
 
   saveSold() {
     localStorage.setItem("sold", JSON.stringify(this.sold))
+  }
+
+  saveUnlocked() {
+    localStorage.setItem("unlocked", JSON.stringify(this.unlocked))
   }
 
   savePurchased() {
@@ -87,6 +94,10 @@ class Store {
       this.sold,
       JSON.parse(localStorage.getItem("sold") || "{}")
     )
+    this.unlocked = Object.assign(
+      this.unlocked,
+      JSON.parse(localStorage.getItem("unlocked") || "{}")
+    )
     this.purchased = Object.assign(
       this.purchased,
       JSON.parse(localStorage.getItem("purchased") || "{}")
@@ -95,7 +106,8 @@ class Store {
 
   reset() {
     this.sold = Object.assign(this.sold, initSold())
-    this.purchased = Object.assign(this.purchased, initPurchased())
+    this.unlocked = Object.assign(this.unlocked, packageMap())
+    this.purchased = Object.assign(this.purchased, packageMap())
   }
 }
 
@@ -103,5 +115,6 @@ export default new Store(
   getPackages(),
   lootToPackage(),
   initSold(),
-  initPurchased()
+  packageMap(),
+  packageMap()
 )

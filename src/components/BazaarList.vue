@@ -100,15 +100,22 @@
             </td>
             <td>
               <div class="buttons are-small">
-                <button
-                  class="button is-success"
-                  v-if="!isUnlocked(p)"
-                  v-on:click="markUnlocked(p)"
-                >
+                <button class="button is-success" v-on:click="markUnlocked(p)">
                   Add All Loot
                 </button>
-                <button class="button is-danger" v-on:click="clearLoot(p)">
+                <button
+                  class="button is-danger"
+                  v-if="isHasLoot(p)"
+                  v-on:click="clearLoot(p)"
+                >
                   Clear Loot
+                </button>
+                <button
+                  class="button is-warning"
+                  v-if="isUnlocked(p)"
+                  v-on:click="markLocked(p)"
+                >
+                  Lock
                 </button>
                 <button
                   class="button is-info"
@@ -159,6 +166,7 @@ export default class BazaarList extends Vue {
   packages = store.packages
   filtered = this.packages
   sold: Record<string, number> = store.sold
+  unlocked: Record<string, boolean> = store.unlocked
   purchased: Record<string, boolean> = store.purchased
   query = ""
   filterUnlocked = false
@@ -173,6 +181,14 @@ export default class BazaarList extends Vue {
       function() {
         this.filter()
         store.saveSold()
+      },
+      { deep: true }
+    )
+    this.$watch(
+      "unlocked",
+      function() {
+        this.filter()
+        store.saveUnlocked()
       },
       { deep: true }
     )
@@ -223,9 +239,10 @@ export default class BazaarList extends Vue {
     this.filter()
   }
   isUnlocked(p: Package): boolean {
-    return p.loot
-      .map(l => this.numSold(l) >= l.quantity)
-      .reduce((a, b) => a && b)
+    return this.unlocked[p.package]
+  }
+  markLocked(p: Package) {
+    return (this.unlocked[p.package] = false)
   }
   markUnlocked(p: Package) {
     for (const loot of p.loot) {
@@ -234,26 +251,40 @@ export default class BazaarList extends Vue {
         this.sold[loot.name] = loot.quantity
       }
     }
+    this.updateUnlocked()
+  }
+  updateUnlocked() {
+    for (const p of this.packages) {
+      const shouldUnlock =
+        !this.isPurchased(p) &&
+        p.loot.map(l => this.numSold(l) >= l.quantity).reduce((a, b) => a && b)
+      if (shouldUnlock) {
+        this.unlocked[p.package] = true
+      }
+    }
   }
   isInProgress(p: Package): boolean {
-    return (
-      !this.isUnlocked(p) &&
-      p.loot
-        .map(l => {
-          const sold = this.numSold(l)
-          return sold > 0
-        })
-        .reduce((a, b) => a || b)
-    )
+    return !this.isUnlocked(p) && !this.isPurchased(p) && this.isHasLoot(p)
+  }
+  isHasLoot(p: Package): boolean {
+    return p.loot
+      .map(l => {
+        const sold = this.numSold(l)
+        return sold > 0
+      })
+      .reduce((a, b) => a || b)
   }
   isPurchased(p: Package): boolean {
     return this.purchased[p.package]
   }
   markPurchased(p: Package) {
     this.purchased[p.package] = true
+    this.unlocked[p.package] = false
+    this.clearLoot(p)
   }
   markNotPurchased(p: Package) {
     this.purchased[p.package] = false
+    this.updateUnlocked()
   }
   clearLoot(p: Package) {
     for (const loot of p.loot) {
@@ -265,9 +296,11 @@ export default class BazaarList extends Vue {
   }
   sell(loot: Item) {
     this.sold[loot.name] = this.numSold(loot) + 1
+    this.updateUnlocked()
   }
   unsell(loot: Item) {
     this.sold[loot.name] = Math.max(this.numSold(loot) - 1, 0)
+    this.updateUnlocked()
   }
 }
 </script>
