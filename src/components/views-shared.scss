@@ -4,13 +4,34 @@ $filters-height: 3rem !default;
 $filters-height-mobile: $filters-height !default;
 $header-height: $navbar-height + $filters-height;
 $header-height-mobile: $navbar-height + $filters-height-mobile;
+$level-item-spacing: ($block-spacing / 2) !default;
 
 .filters.level {
   width: 100%;
   height: $filters-height;
   margin-bottom: 0;
 
-  @include mobile {
+  @media screen and (min-width: 700px) {
+    display: flex;
+    .level-left,
+    .level-right {
+      display: flex;
+    }
+    .level-left + .level-right {
+      margin-top: 0;
+    }
+    .level-item {
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: $level-item-spacing;
+      }
+      &:not(.is-narrow) {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  @media screen and (max-width: 699px) {
     position: relative;
     padding-left: 0;
     padding-top: 0.5rem;
@@ -32,8 +53,8 @@ $header-height-mobile: $navbar-height + $filters-height-mobile;
 
 .scrollable {
   height: calc(100vh - #{$header-height});
-  @include mobile {
-    height: calc(100vh - #{$header-height-mobile});
-  }
   overflow-y: scroll;
+  @media screen and (max-width: 699px) {
+    height: auto;
+  }
 }
