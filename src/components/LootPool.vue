@@ -32,6 +32,7 @@
           <tr>
             <th>Loot</th>
             <th>Quantity</th>
+            <th>Used in Package</th>
           </tr>
           <tr v-for="row in filtered" v-bind:key="row.name">
             <td>
@@ -50,6 +51,11 @@
                 </div>
               </div>
             </td>
+            <td>
+              <div v-for="p in row.packages" v-bind:key="p.name">
+                x{{ p.quantity }} for {{ p.name }}
+              </div>
+            </td>
           </tr>
         </table>
       </div>
@@ -59,16 +65,18 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator"
-import store from "../services/bazaar"
+import store, { Item } from "../services/bazaar"
 
 interface Row {
   name: string
   quantity: number
+  packages: Item[]
 }
 
 @Component
 export default class LootPool extends Vue {
   sold = store.sold
+  lootToPackage = store.lootToPackage
   filtered: Row[] = []
   query = ""
 
@@ -87,8 +95,15 @@ export default class LootPool extends Vue {
     const rows: Row[] = []
     const q = this.query.toLowerCase()
     for (const [name, quantity] of Object.entries(this.sold)) {
-      if (name.toLowerCase().includes(q)) {
-        rows.push({ name, quantity })
+      let match = name.toLowerCase().includes(q)
+      if (!match) {
+        // Check if any of the package names match
+        match = this.lootToPackage[name]
+          .map(p => p.name.toLowerCase().includes(q))
+          .reduce((a, b) => a || b)
+      }
+      if (match) {
+        rows.push({ name, quantity, packages: this.lootToPackage[name] })
       }
     }
     this.filtered = rows

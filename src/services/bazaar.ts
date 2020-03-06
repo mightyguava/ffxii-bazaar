@@ -16,6 +16,21 @@ function getPackages(): Package[] {
   return data
 }
 
+function lootToPackage(): Record<string, Item[]> {
+  const loot: Record<string, Item[]> = {}
+  for (const p of getPackages()) {
+    for (const l of p.loot) {
+      const v = loot[l.name] || []
+      v.push({
+        name: p.package,
+        quantity: l.quantity
+      })
+      loot[l.name] = v
+    }
+  }
+  return loot
+}
+
 /**
  * sold and purchased need to be initialized with zero values to support Vue's reactivity model.
  */
@@ -41,14 +56,19 @@ function initPurchased(): Record<string, boolean> {
 
 class Store {
   packages: Package[]
+  /* mapping of loot names to the quantities required in each package that needs it */
+  lootToPackage: Record<string, Item[]>
   sold: Record<string, number>
   purchased: Record<string, boolean>
+
   constructor(
     packages: Package[],
+    lootToPackage: Record<string, Item[]>,
     sold: Record<string, number>,
     purchased: Record<string, boolean>
   ) {
     this.packages = packages
+    this.lootToPackage = lootToPackage
     this.sold = sold
     this.purchased = purchased
     this.load()
@@ -79,4 +99,9 @@ class Store {
   }
 }
 
-export default new Store(getPackages(), initSold(), initPurchased())
+export default new Store(
+  getPackages(),
+  lootToPackage(),
+  initSold(),
+  initPurchased()
+)
