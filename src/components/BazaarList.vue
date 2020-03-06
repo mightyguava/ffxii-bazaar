@@ -112,7 +112,7 @@
                 </button>
                 <button
                   class="button is-warning"
-                  v-if="isUnlocked(p)"
+                  v-if="isUnlocked(p) && !isUnlockable(p)"
                   v-on:click="markLocked(p)"
                 >
                   Lock
@@ -253,11 +253,14 @@ export default class BazaarList extends Vue {
     }
     this.updateUnlocked()
   }
+  isUnlockable(p: Package): boolean {
+    return p.loot
+      .map(l => this.numSold(l) >= l.quantity)
+      .reduce((a, b) => a && b)
+  }
   updateUnlocked() {
     for (const p of this.packages) {
-      const shouldUnlock =
-        !this.isPurchased(p) &&
-        p.loot.map(l => this.numSold(l) >= l.quantity).reduce((a, b) => a && b)
+      const shouldUnlock = !this.isPurchased(p) && this.isUnlockable(p)
       if (shouldUnlock) {
         this.unlocked[p.package] = true
       }
