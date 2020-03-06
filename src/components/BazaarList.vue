@@ -36,6 +36,13 @@
                 </button>
                 <button
                   class="button"
+                  v-bind:class="{ 'is-warning': this.filterInProgress }"
+                  v-on:click="toggleShow('inProgress')"
+                >
+                  In Progress
+                </button>
+                <button
+                  class="button"
                   v-bind:class="{ 'is-danger': this.filterLocked }"
                   v-on:click="toggleShow('locked')"
                 >
@@ -70,6 +77,9 @@
               <div class="tags">
                 <span v-if="isUnlocked(p)" class="tag is-success"
                   >Unlocked</span
+                >
+                <span v-if="isInProgress(p)" class="tag is-warning"
+                  >In Progress</span
                 >
                 <span v-if="isPurchased(p)" class="tag is-info">Purchased</span>
               </div>
@@ -154,6 +164,7 @@ export default class BazaarList extends Vue {
   filterUnlocked = false
   filterLocked = false
   filterPurchased = false
+  filterInProgress = false
   checkShowAll = true
 
   mounted() {
@@ -185,6 +196,7 @@ export default class BazaarList extends Vue {
         (this.checkShowAll ||
           (this.filterUnlocked && this.isUnlocked(p)) ||
           (this.filterPurchased && this.isPurchased(p)) ||
+          (this.filterInProgress && this.isInProgress(p)) ||
           (this.filterLocked && !this.isUnlocked(p) && !this.isPurchased(p)))
       )
     })
@@ -200,9 +212,14 @@ export default class BazaarList extends Vue {
       case "purchased":
         this.filterPurchased = !this.filterPurchased
         break
+      case "inProgress":
+        this.filterInProgress = !this.filterInProgress
     }
     this.checkShowAll =
-      !this.filterUnlocked && !this.filterLocked && !this.filterPurchased
+      !this.filterUnlocked &&
+      !this.filterLocked &&
+      !this.filterPurchased &&
+      !this.filterInProgress
     this.filter()
   }
   isUnlocked(p: Package): boolean {
@@ -217,6 +234,17 @@ export default class BazaarList extends Vue {
         this.sold[loot.name] = loot.quantity
       }
     }
+  }
+  isInProgress(p: Package): boolean {
+    return (
+      !this.isUnlocked(p) &&
+      p.loot
+        .map(l => {
+          const sold = this.numSold(l)
+          return sold > 0
+        })
+        .reduce((a, b) => a || b)
+    )
   }
   isPurchased(p: Package): boolean {
     return this.purchased[p.package]
