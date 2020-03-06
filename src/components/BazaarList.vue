@@ -100,7 +100,11 @@
             </td>
             <td>
               <div class="buttons are-small">
-                <button class="button is-success" v-on:click="markUnlocked(p)">
+                <button
+                  class="button is-success"
+                  v-if="!isUnlockable(p) && !isUnlocked(p)"
+                  v-on:click="markUnlocked(p)"
+                >
                   Add All Loot
                 </button>
                 <button
@@ -111,7 +115,7 @@
                   Clear Loot
                 </button>
                 <button
-                  class="button is-warning"
+                  class="button is-danger"
                   v-if="isUnlocked(p) && !isUnlockable(p)"
                   v-on:click="markLocked(p)"
                 >
