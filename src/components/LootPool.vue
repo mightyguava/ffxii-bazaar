@@ -2,7 +2,7 @@
   <div>
     <nav class="has-background-light">
       <div class="container">
-        <div class="level filters">
+        <div class="level filters is-mobile">
           <div class="level-left">
             <div class="level-item">
               <div class="field-label">
@@ -21,6 +21,11 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="level-item">
+              <button class="button is-info is-small" v-on:click="clearLoot">
+                Clear All Loot
+              </button>
             </div>
           </div>
         </div>
@@ -91,6 +96,7 @@ export default class LootPool extends Vue {
     }
     this.sold[name] = quantity
   }
+
   filter() {
     const rows: Row[] = []
     const q = this.query.toLowerCase()
@@ -107,6 +113,13 @@ export default class LootPool extends Vue {
       }
     }
     this.filtered = rows.sort((a, b) => (a.name < b.name ? -1 : 1))
+  }
+
+  clearLoot() {
+    for (const name of Object.keys(this.sold)) {
+      this.sold[name] = 0
+    }
+    this.filter()
   }
 }
 </script>
