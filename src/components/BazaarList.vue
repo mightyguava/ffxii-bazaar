@@ -55,6 +55,13 @@
                 >
                   Purchased
                 </button>
+                <button
+                  class="button"
+                  v-bind:class="{ 'has-background-yellow': this.filterStarred }"
+                  v-on:click="toggleShow('starred')"
+                >
+                  Starred
+                </button>
               </div>
             </div>
           </div>
@@ -73,6 +80,19 @@
           </tr>
           <tr v-for="p in filtered" v-bind:key="p.id">
             <td>
+              <span
+                class="icon is-size-5 has-color-yellow clickable-icon"
+                v-on:click="toggleStar(p)"
+              >
+                <i
+                  class="mdi"
+                  v-bind:class="{
+                    'mdi-star-outline': !isStarred(p),
+                    'mdi-star': isStarred(p)
+                  }"
+                  aria-hidden="true"
+                ></i>
+              </span>
               {{ p.package }}
               <div class="tags">
                 <span v-if="isUnlocked(p)" class="tag is-success"
@@ -88,12 +108,15 @@
               <div v-for="loot in p.loot" v-bind:key="loot.name">
                 {{ loot.name }} {{ sold[loot.name] || 0 }}/{{ loot.quantity }}
                 <span
-                  class="icon is-size-5 sell-icon"
+                  class="icon is-size-5 clickable-icon"
                   v-on:click="unsell(loot)"
                 >
                   <i class="mdi mdi-minus-box-outline" aria-hidden="true"></i>
                 </span>
-                <span class="icon is-size-5 sell-icon" v-on:click="sell(loot)">
+                <span
+                  class="icon is-size-5 clickable-icon"
+                  v-on:click="sell(loot)"
+                >
                   <i class="mdi mdi-plus-box-outline" aria-hidden="true"></i>
                 </span>
               </div>
@@ -155,9 +178,17 @@ $filters-height: 3rem;
 $filters-height-mobile: 2 * $filters-height;
 @import "./views-shared.scss";
 
-.sell-icon {
+.clickable-icon {
   user-select: none;
   cursor: pointer;
+}
+
+.has-color-yellow {
+  color: #ffd800;
+}
+
+.has-background-yellow {
+  background-color: #ffd800;
 }
 </style>
 
@@ -169,6 +200,7 @@ import store, { Item, Package } from "../services/bazaar"
 export default class BazaarList extends Vue {
   packages = store.packages
   filtered = this.packages
+  starred = store.starred
   sold: Record<string, number> = store.sold
   unlocked: Record<string, boolean> = store.unlocked
   purchased: Record<string, boolean> = store.purchased
@@ -177,6 +209,7 @@ export default class BazaarList extends Vue {
   filterLocked = false
   filterPurchased = false
   filterInProgress = false
+  filterStarred = false
   checkShowAll = true
 
   mounted() {
@@ -204,20 +237,31 @@ export default class BazaarList extends Vue {
       },
       { deep: true }
     )
+    this.$watch(
+      "starred",
+      function() {
+        this.filter()
+        store.saveStarred()
+      },
+      { deep: true }
+    )
   }
 
   filter() {
     const q = this.query.toLowerCase()
     this.filtered = this.packages.filter(p => {
       return (
-        (p.package.toLowerCase().includes(q) ||
+        ((p.package.toLowerCase().includes(q) ||
           !!p.loot.find(l => l.name.toLowerCase().includes(q)) ||
           !!p.reward.find(r => r.name.toLowerCase().includes(q))) &&
-        (this.checkShowAll ||
-          (this.filterUnlocked && this.isUnlocked(p)) ||
-          (this.filterPurchased && this.isPurchased(p)) ||
-          (this.filterInProgress && this.isInProgress(p)) ||
-          (this.filterLocked && !this.isUnlocked(p) && !this.isPurchased(p)))
+          (this.checkShowAll ||
+            (this.filterUnlocked && this.isUnlocked(p)) ||
+            (this.filterPurchased && this.isPurchased(p)) ||
+            (this.filterInProgress && this.isInProgress(p)) ||
+            (this.filterLocked &&
+              !this.isUnlocked(p) &&
+              !this.isPurchased(p)))) ||
+        (this.filterStarred && this.isStarred(p))
       )
     })
   }
@@ -234,12 +278,17 @@ export default class BazaarList extends Vue {
         break
       case "inProgress":
         this.filterInProgress = !this.filterInProgress
+        break
+      case "starred":
+        this.filterStarred = !this.filterStarred
+        break
     }
     this.checkShowAll =
       !this.filterUnlocked &&
       !this.filterLocked &&
       !this.filterPurchased &&
-      !this.filterInProgress
+      !this.filterInProgress &&
+      !this.filterStarred
     this.filter()
   }
   isUnlocked(p: Package): boolean {
@@ -292,6 +341,12 @@ export default class BazaarList extends Vue {
   markNotPurchased(p: Package) {
     this.purchased[p.package] = false
     this.updateUnlocked()
+  }
+  isStarred(p: Package): boolean {
+    return this.starred[p.package]
+  }
+  toggleStar(p: Package) {
+    this.starred[p.package] = !this.starred[p.package]
   }
   clearLoot(p: Package) {
     for (const loot of p.loot) {

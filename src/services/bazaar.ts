@@ -61,19 +61,22 @@ class Store {
   sold: Record<string, number>
   unlocked: Record<string, boolean>
   purchased: Record<string, boolean>
+  starred: Record<string, boolean>
 
   constructor(
     packages: Package[],
     lootToPackage: Record<string, Item[]>,
     sold: Record<string, number>,
     unlocked: Record<string, boolean>,
-    purchased: Record<string, boolean>
+    purchased: Record<string, boolean>,
+    starred: Record<string, boolean>
   ) {
     this.packages = packages
     this.lootToPackage = lootToPackage
     this.sold = sold
     this.unlocked = unlocked
     this.purchased = purchased
+    this.starred = starred
     this.load()
   }
 
@@ -89,6 +92,10 @@ class Store {
     localStorage.setItem("purchased", JSON.stringify(this.purchased))
   }
 
+  saveStarred() {
+    localStorage.setItem("starred", JSON.stringify(this.starred))
+  }
+
   load() {
     this.sold = Object.assign(
       this.sold,
@@ -102,12 +109,17 @@ class Store {
       this.purchased,
       JSON.parse(localStorage.getItem("purchased") || "{}")
     )
+    this.starred = Object.assign(
+      this.starred,
+      JSON.parse(localStorage.getItem("starred") || "{}")
+    )
   }
 
   reset() {
     this.sold = Object.assign(this.sold, initSold())
     this.unlocked = Object.assign(this.unlocked, packageMap())
     this.purchased = Object.assign(this.purchased, packageMap())
+    this.starred = Object.assign(this.starred, packageMap())
   }
 }
 
@@ -115,6 +127,7 @@ export default new Store(
   getPackages(),
   lootToPackage(),
   initSold(),
+  packageMap(),
   packageMap(),
   packageMap()
 )
